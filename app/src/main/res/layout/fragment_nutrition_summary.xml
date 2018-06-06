@@ -1,0 +1,63 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mini.pl.meal_tracker.fragments.NutritionSummaryFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:textColor="@android:color/darker_gray"
+        android:fontFamily="@font/abhaya_libre"
+        android:elevation="5dp"
+        android:text="Calories Consumption"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piechart"
+        android:fontFamily="@font/abhaya_libre"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:textColor="@android:color/darker_gray"
+        android:fontFamily="@font/abhaya_libre"
+        android:elevation="5dp"
+        android:text="Nutrition Facts"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/nutritionFacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/abhaya_libre"
+        android:textSize="25sp"
+        android:layout_margin="@dimen/space_default"
+        android:text="@string/nutrition_facts" />
+
+</LinearLayout>
+</ScrollView>

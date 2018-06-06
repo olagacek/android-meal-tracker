@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/editTextDialogUserInput"
+        android:layout_width="match_parent"
+        android:hint="Add new ingredient"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Add new ingredient"
+        android:layout_height="wrap_content" >
+
+    </com.rengwuxian.materialedittext.MaterialEditText>
+
+</LinearLayout>

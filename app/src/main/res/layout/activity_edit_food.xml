@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mini.pl.meal_tracker.activities.EditFoodActivity">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/mealNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_default"
+        android:hint="@string/edit_meal_name_text"
+        app:met_floatingLabel="highlight"
+        android:fontFamily="@font/abhaya_libre"
+        app:met_floatingLabelText="@string/edit_meal_name_text"
+        app:met_primaryColor="@color/colorAccent" />
+
+    <TextView
+        android:elevation="5dp"
+        android:fontFamily="@font/abhaya_libre"
+        android:text="Recipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:textColor="@android:color/darker_gray"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/mealRecipeEditText"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/abhaya_libre"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_default"
+        android:hint="@string/edit_food_recipe"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/edit_food_recipe"
+        app:met_primaryColor="@color/colorAccent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/darker_gray"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:fontFamily="@font/abhaya_libre"
+            android:text="Ingredients"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+        <ImageButton
+            android:id="@+id/addIngredientId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/add"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1px"
+        android:id="@+id/ingredientsList"
+        android:divider="@drawable/divider"
+        android:showDividers="end|middle"
+        />
+
+</LinearLayout>

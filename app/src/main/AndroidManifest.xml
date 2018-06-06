@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mini.pl.meal_tracker">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.DaySummary"
+            android:label="@string/title_activity_day_summary"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ShoppingListActivity"
+            android:label="@string/title_activity_shopping_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.AddMealActivity"
+            android:label="@string/title_activity_add_meal"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.SearchFoodActivity"
+            android:label="@string/title_activity_search_food"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.FullMealDetailsActivity"
+            android:label="@string/title_activity_full_meal_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.EditFoodActivity"></activity>
+        <provider
+            android:authorities="mini.pl.meal_tracker.providers.MySuggestionProvider"
+            android:name=".providers.MySuggestionProvider"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

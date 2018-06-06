@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mini.pl.meal_tracker.activities.AddMealActivity"
+    >
+    <item android:id="@+id/doneEditingId"
+        android:title="@string/action_edit"
+        android:icon="@drawable/done"
+        app:showAsAction="always"
+        android:orderInCategory="50">
+    </item>
+</menu>
