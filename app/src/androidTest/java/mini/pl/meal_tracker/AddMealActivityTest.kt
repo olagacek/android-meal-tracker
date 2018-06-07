@@ -1,6 +1,5 @@
 package mini.pl.meal_tracker
 
-import android.app.Activity
 import android.content.Intent
 import android.support.test.InstrumentationRegistry
 import android.support.test.espresso.Espresso.onView
@@ -21,6 +20,7 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.hamcrest.Matchers.`is`
+import java.time.ZoneId
 import java.time.ZonedDateTime
 
 @RunWith(AndroidJUnit4::class)
@@ -31,7 +31,8 @@ class AddMealActivityTest {
 
     private val activityWithMealIntent = object : ActivityTestRule<AddMealActivity>(AddMealActivity::class.java) {
         override fun getActivityIntent(): Intent {
-            val meal = Meal(ZonedDateTime.now(), "Breakfast", Food("oat", "",
+            val meal = Meal(ZonedDateTime.of(2018, 6, 6, 4, 0, 0, 0, ZoneId.systemDefault()),
+                    "Breakfast", Food("oat", "",
                     emptyList(), 1000.0, "", emptyMap(), 10.0), 0)
             InstrumentationRegistry.getTargetContext();
             val intent = Intent(Intent.ACTION_MAIN);

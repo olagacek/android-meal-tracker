@@ -81,12 +81,12 @@ class DaySummary : AppCompatActivity() {
     }
 
     companion object {
-        val DATE_KEY = "date"
+        const val DATE_KEY = "date"
     }
 
     inner class SectionsPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
         private val mFragmentList = ArrayList<Fragment>()
-        private val fragemntTitlesList = ArrayList<String>()
+        private val fragmentTitlesList = ArrayList<String>()
 
         override fun getItem(position: Int): Fragment {
             return mFragmentList.get(position)
@@ -94,7 +94,7 @@ class DaySummary : AppCompatActivity() {
 
         fun addFragment(fragment: Fragment, title: String) {
             mFragmentList.add(fragment)
-            fragemntTitlesList.add(title)
+            fragmentTitlesList.add(title)
         }
 
         override fun getCount(): Int {
@@ -102,7 +102,7 @@ class DaySummary : AppCompatActivity() {
         }
 
         override fun getPageTitle(position: Int): CharSequence {
-            return fragemntTitlesList.get(position)
+            return fragmentTitlesList.get(position)
         }
     }
 

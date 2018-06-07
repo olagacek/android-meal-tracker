@@ -39,14 +39,13 @@ dependencies {
     compile 'com.android.support:design:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    androidTestCompile 'com.android.support.test.espresso:espresso-intents:3.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestCompile 'com.android.support.test.espresso:espresso-intents:3.0.2'
     compile 'com.rengwuxian.materialedittext:library:2.1.4'
     compile 'com.github.PhilJay:MPAndroidChart:v2.2.4'
     compile "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.21"
     implementation "org.jetbrains.anko:anko-commons:0.10.4"
-    implementation 'com.beust:klaxon:3.0.1'
     implementation 'com.squareup.moshi:moshi-kotlin:1.6.0'
     implementation "android.arch.persistence.room:runtime:1.1.0"
     kapt "android.arch.persistence.room:compiler:1.1.0"

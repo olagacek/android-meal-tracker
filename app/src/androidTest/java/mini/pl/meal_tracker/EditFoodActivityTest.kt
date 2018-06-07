@@ -13,7 +13,6 @@ import mini.pl.meal_tracker.activities.EditFoodActivity
 import mini.pl.meal_tracker.adapters.IngredientAdapter
 import mini.pl.meal_tracker.data.Food
 import mini.pl.meal_tracker.data.Nutrient
-import mini.pl.meal_tracker.utils.Matcher
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.CoreMatchers.instanceOf
 import org.hamcrest.Matchers
@@ -22,8 +21,6 @@ import org.junit.Rule
 import org.junit.Test
 
 class EditFoodActivityTest {
-
-    private val matcher = Matcher()
 
     private val activityWithFoodIntent = object : ActivityTestRule<EditFoodActivity>(EditFoodActivity::class.java) {
         override fun getActivityIntent(): Intent {
